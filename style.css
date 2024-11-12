@@ -1,0 +1,291 @@
+/* Import des polices (si tu en utilises) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Style général de la page */
+body {
+    background-color: #121212; /* Couleur sombre pour le fond */
+    color: #ffffff;            /* Couleur claire pour le texte */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajout de padding pour les sections */
+section {
+    padding: 20px;
+}
+
+/* Optionnel : centrer les éléments de la page */
+header, section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Couleurs */
+.primary { background-color: #3b82f6; }
+.secondary { background-color: #fbbf24; }
+.dark { color: #374151; }
+.medium-light { color: #d1d5db; }
+.light { color: #f3f4f6; }
+
+/* Alertes */
+.warning { color: #f59e0b; }
+.danger { color: #ef4444; }
+.success { color: #10b981; }
+.info { color: #3b82f6; }
+
+/* Style des blocs de couleur */
+.color {
+  width: 100px;
+  height: 50px;
+  margin: 10px 0;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Typographie */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #374151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+h1 { font-size: 2em; }
+p { font-size: 1em; }
+.lead { font-size: 1.25em; font-weight: bold; }
+blockquote { font-style: italic; border-left: 4px solid #3b82f6; padding-left: 10px; }
+
+/* Style de base pour tous les boutons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  color: #ffffff;
+}
+/* Boutons colorés */
+.btn-primary {
+  background-color: #3b82f6;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+}
+
+.btn-info {
+  background-color: #3b82f6;
+}
+
+.btn-success {
+  background-color: #10b981;
+}
+
+/* Boutons outline */
+.btn-outline-primary {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  color: #f59e0b;
+  border: 2px solid #f59e0b;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #ef4444;
+  border: 2px solid #ef4444;
+}
+
+.btn-outline-info {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  color: #10b981;
+  border: 2px solid #10b981;
+}
+
+/* Tailles des boutons */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.875em;
+}
+
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 1.25em;
+}
+
+/* Style pour les icônes */
+.icon-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.5em; /* Taille des icônes */
+  color: #ffffff;
+}
+
+.icon-container i {
+  margin-right: 5px;
+}
+
+/* Style de base pour les éléments de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d1d5db; /* Gris clair */
+    border-radius: 4px;
+    background-color: #2d2d2d; /* Fond sombre */
+    color: #ffffff; /* Texte en blanc */
+    font-size: 1em;
+}
+
+/* Ajout d'un style au focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6; /* Couleur primaire */
+    outline: none;
+}
+
+/* Style pour les listes simples */
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+ul li::marker, ol li::marker {
+  color: #3b82f6; /* Couleur primaire pour les puces ou numéros */
+}
+
+/* Style pour les listes en groupe */
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  background-color: #2d2d2d; /* Fond sombre */
+  color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item i {
+  margin-right: 10px;
+  color: #3b82f6; /* Couleur d'icône */
+  font-size: 1.2em;
+}
+
+/* Style de base pour les cartes */
+.card {
+  background-color: #2d2d2d; /* Fond sombre */
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card-photo {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8); /* Pour que le texte ressorte mieux */
+}
+
+.card-photo h3 {
+  color: #ffffff;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon i {
+  font-size: 2em;
+  margin-right: 15px;
+  color: #3b82f6; /* Couleur de l'icône */
+}
+
+/* Style des sections pour une meilleure organisation */
+section {
+  border: 1px solid #3b82f6; /* Légère bordure autour de chaque section */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de la barre de navigation */
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #3b82f6; /* Couleur primaire au survol */
+}

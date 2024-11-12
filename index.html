@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Kit UI</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Polices Google -->
+        <link link_to="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Icônes Font Awesome -->
+        <link link_to="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+<body>
+    <header>
+        <h1>Le Kit Ui de BG</h1>
+        <p>Un kit UI sobre et simple, conçu pour avoir un max de flow</p>
+    </header>
+
+    <nav>
+        <a href="#colors" class="nav-link">Couleurs</a>
+        <a href="#typography" class="nav-link">Typographie</a>
+        <a href="#buttons" class="nav-link">Boutons</a>
+        <a href="#icons" class="nav-link">Iconographie</a>
+        <a href="#forms" class="nav-link">Formulaires</a>
+        <a href="#lists" class="nav-link">Listes</a>
+        <a href="#cards" class="nav-link">Cartes</a>
+    </nav>
+
+    <section id="colors">
+        <h2>Couleurs</h2>
+        <div class="color primary">Primary</div>
+        <div class="color secondary">Secondary</div>
+        <div class="color dark">Gris foncé</div>
+        <div class="color medium-light">Gris clair</div>
+        <div class="color light">Gris très léger</div>
+        <div class="color warning">Warning</div>
+        <div class="color danger">Danger</div>
+        <div class="color success">Success</div>
+        <div class="color info">Info</div>
+    </section>
+
+    <section id="typography">
+        <h2>Typographie</h2>
+        <h1>Titre H1</h1>
+        <h2>Titre H2</h2>
+        <h3>Titre H3</h3>
+        <h4>Titre H4</h4>
+        <h5>Titre H5</h5>
+        <h6>Titre H6</h6>
+        
+        <p>Paragraphe de texte normal pour montrer le style par défaut du texte.</p>
+        <p class="lead">Paragraphe lead pour un texte plus important.</p>
+        
+        <blockquote>Ceci est une citation avec un style spécial pour la mettre en valeur.</blockquote>
+        
+        <ul>
+            <li>Élément de liste non ordonnée</li>
+            <li>Élément de liste non ordonnée</li>
+        </ul>
+        
+        <ol>
+            <li>Élément de liste ordonnée</li>
+            <li>Élément de liste ordonnée</li>
+        </ol>
+    </section>
+
+        <section id="buttons">
+        <h2>Boutons</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-outline-primary">Outline Primary</button>
+        <button class="btn btn-outline-warning">Outline Warning</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+        <button class="btn btn-outline-info">Outline Info</button>
+        <button class="btn btn-outline-success">Outline Success</button>
+        <button class="btn btn-primary btn-sm">Small Primary</button>
+        <button class="btn btn-primary btn-lg">Large Primary</button>
+    </section>
+
+    <section id="icons">
+        <h2>Iconographie</h2>
+        <div class="icon-container">
+            <i class="fas fa-home"></i> Maison
+            <i class="fas fa-user"></i> Utilisateur
+            <i class="fas fa-envelope"></i> Message
+            <i class="fas fa-cog"></i> Paramètres
+            <i class="fas fa-heart"></i> Favoris
+        </div>
+    </section>
+
+    <section id="forms">
+        <h2>Formulaires</h2>
+        <form>
+            <label for="name">Nom</label>
+            <input type="text" id="name" placeholder="Entrez votre nom">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Entrez votre email">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" placeholder="Entrez votre mot de passe">
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="male">Masculin</option>
+                <option value="female">Féminin</option>
+                <option value="other">Autre</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Votre message..."></textarea>
+            <label><input type="radio" name="choice" value="yes"> Oui</label>
+            <label><input type="radio" name="choice" value="no"> Non</label>
+            <label><input type="checkbox" name="subscribe"> S'abonner à la newsletter</label>
+            <button class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="lists">
+        <h2>Listes</h2>
+        <h3>Liste Simple</h3>
+        <ul>
+            <li>Élément de liste simple 1</li>
+            <li>Élément de liste simple 2</li>
+            <li>Élément de liste simple 3</li>
+        </ul>
+        <h3>Liste en Groupe</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> Élément de groupe 1</li>
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> Élément de groupe 2</li>
+            <li class="list-group-item"><i class="fas fa-check-circle"></i> Élément de groupe 3</li>
+        </ul>
+    </section>
+
+    <section id="cards">
+        <h2>Cartes</h2>
+        <div class="card">
+            <h3>Carte Simple</h3>
+            <p>Une simple carte avec un titre et un paragraphe de texte.</p>
+            <button class="btn btn-primary">Action</button>
+        </div>
+        <div class="card card-photo" style="background-image: url('images/jongleur.png');">
+            <h3>Carte avec Photo</h3>
+            <p>Cette carte a une photo en arrière-plan et un texte par-dessus.</p>
+            <button class="btn btn-secondary">En savoir plus</button>
+        </div>
+        <div class="card card-icon">
+            <i class="fas fa-user-circle"></i>
+            <div>
+                <h3>Carte avec Icône</h3>
+                <p>Une carte avec une icône à gauche du texte.</p>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
